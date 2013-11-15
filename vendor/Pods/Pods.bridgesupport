@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant const='true' declared_type='NSString*' name='GFAudioEnabledSettingsKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFAutomaticallyLogViewAppearance' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFAutosplitSettingsKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFCameraEnabledSettingsKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFExperienceDestinationURLUserInfoKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFExperienceStartedAtUserInfoKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFShowPreviewSettingsKey' type='@'/>
+<constant const='true' declared_type='NSString*' name='GFStartedUploadingNotificationName' type='@'/>
+<class name='GFSettingsViewController'>
+<method class_method='true' selector='settingsViewControllerForInstance:'>
+<arg declared_type='LookBack*' index='0' name='gf' type='@'/>
+<retval declared_type='id' type='@'/>
+</method>
+</class>
+<class name='LookBack'>
+<method selector='appToken'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+<method selector='enabled'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='enteredView:'>
+<arg declared_type='NSString*' index='0' name='viewIdentifier' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='exitedView:'>
+<arg declared_type='NSString*' index='0' name='viewIdentifier' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='isPaused'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method class_method='true' selector='lookback'>
+<retval declared_type='LookBack*' type='@'/>
+</method>
+<method selector='setEnabled:'>
+<arg declared_type='BOOL' index='0' name='enabled' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setPaused:'>
+<arg declared_type='BOOL' index='0' name='paused' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setShakeToRecord:'>
+<arg declared_type='BOOL' index='0' name='shakeToRecord' type='B'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setUserIdentifier:'>
+<arg declared_type='NSString*' index='0' name='userIdentifier' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='setupWithAppToken:'>
+<arg declared_type='NSString*' index='0' name='appToken' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='shakeToRecord'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='userIdentifier'>
+<retval declared_type='NSString*' type='@'/>
+</method>
+</class>
+</signatures>
