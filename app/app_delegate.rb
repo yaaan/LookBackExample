@@ -10,13 +10,13 @@ class AppDelegate
   end
 
   def loadLookBack
-    #LookBackHelper.new
+    LookBackHelper.new
     return
   end
 
   def openController
     con = LookBackViewController.new
-    navigationController = UINavigationController.alloc.initWithRootViewController(con)    
+    navigationController = UINavigationController.alloc.initWithRootViewController(con)
     navigationController.navigationBar.barTintColor = UIColor.colorWithRed(0, green:0.6, blue:0.933, alpha:1.0)
     @window.rootViewController = navigationController
   end
